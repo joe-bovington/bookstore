@@ -8,6 +8,7 @@ export function Searchbox({ setBookData }) {
         type="text"
         onChange={(e) => setSearchVal(e.target.value)}
         value={searchVal}
+        placeholder="Enter Book Title"
       />
       <button
         onClick={(e) => {
