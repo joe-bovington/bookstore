@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./header.js";
+import { Searchbox } from "./searchbox.js";
+import { Book } from "./book.js";
 
 function App() {
+  const [bookData, setBookData] = useState([]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Searchbox setBookData={setBookData} />
+      {bookData.map((book) => {
+        return <Book isbn={book.isbn13 || book.isbn10} />;
+      })}
     </div>
   );
 }
