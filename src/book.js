@@ -12,8 +12,8 @@ export const Book = React.memo(({ isbn }) => {
     <div className="book">
       <img src={book.image} className="frontCover" />
       <div className="bookInfo">
-        <h1>Title: {book.title}</h1>
-        <h2>Author: {book.authors}</h2>
+        <h4>Title: {book.title}</h4>
+        <h6>Author: {book.authors}</h6>
       </div>
     </div>
   );

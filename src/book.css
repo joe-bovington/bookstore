@@ -1,17 +1,19 @@
 .book {
   border: 1px solid black;
-  width: 450px;
-  height: 300px;
-  background-color: blue;
+  width: 30%;
+  height: 200px;
+  background-color: #b9936c;
   display: flex;
+  margin: 20px;
 }
 
 .frontCover {
-  height: 250px;
+  height: 200px;
 }
 
 .bookInfo {
-  background-color: red;
+  background-color: #e6e2d3;
   width: 200px;
-  height: 300px;
+  height: 200px;
+  font-size: 20px;
 }

@@ -1,0 +1,9 @@
+.header{
+    background-image: 'https://static01.nyt.com/images/2017/05/11/t-magazine/bookstore-slide-2MCD/bookstore-slide-2MCD-superJumbo.jpg';
+    background-color: #dac292;
+    height: 75px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -11,9 +11,12 @@ function App() {
     <div className="App">
       <Header />
       <Searchbox setBookData={setBookData} />
+      {bookData.length===0 && <div>Please enter new search term</div>}
+      <div className='Grid'>
       {bookData.map((book) => {
         return <Book isbn={book.isbn13 || book.isbn10} />;
       })}
+      </div>
     </div>
   );
 }
